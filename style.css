@@ -1,0 +1,300 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+/* Navigation */
+header {
+    background-color: #000;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+.logo span {
+    color: #d4a373;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    color: #d4a373;
+}
+
+/* Hero Section */
+.hero {
+    height: 85vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1600");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    padding: 8%;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background-color: #d4a373;
+    color: black;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+/* Common Section */
+section {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+/* About Section */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+}
+
+.about-container img {
+    width: 40%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    font-size: 27px;
+    margin-bottom: 20px;
+    color: #d4a373;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+/* Gallery */
+.gallery {
+    background-color: #1b1b1b;
+}
+
+.gallery > p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 30%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.04);
+}
+
+/* Services */
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-box {
+    background-color: #222;
+    padding: 35px 20px;
+    width: 230px;
+    border-radius: 10px;
+    border: 1px solid #444;
+}
+
+.service-box h3 {
+    color: #d4a373;
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Packages */
+.packages {
+    background-color: #1b1b1b;
+}
+
+.package-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.package-box {
+    background-color: #222;
+    padding: 35px 25px;
+    width: 280px;
+    border-radius: 10px;
+    border: 1px solid #555;
+}
+
+.package-box h3 {
+    color: #d4a373;
+    margin-bottom: 20px;
+}
+
+.package-box h2 {
+    font-size: 30px;
+}
+
+.package-box p {
+    margin: 15px 0;
+    color: #ccc;
+}
+
+.featured {
+    border: 2px solid #d4a373;
+}
+
+/* Contact */
+.contact-info {
+    margin: 30px 0;
+}
+
+.contact-info p {
+    margin: 15px;
+    color: #ccc;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+    line-height: 2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container img {
+        width: 100%;
+    }
+
+    .gallery-container img {
+        width: 45%;
+    }
+
+    .service-box {
+        width: 100%;
+    }
+
+    .package-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container img {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+}
